@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../asset/bg-image/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+    background-color: rgba(0, 0, 0, #6e6c6c1c);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+.nav-part{
+    background-color: azure;
+    width: 100%;
+    box-shadow: 5px 7px 10px #4b4949;
+
+}
+.list-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.item{
+    height: 45px;
+    margin-right:20px;
+    padding: 4px 15px;
+    border-radius: 8px;
+    
+}
+a{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color:tomato;
+    
+}
+.logo{
+    width: 80px;
+    height: 90%;
+    margin-right: auto;
+    border-radius:15px;
+
+}
+img{
+    width: 55px;
+    height: 50px;
+}
+.sidebar-container{
+    display:none;
+    flex-flow: column wrap;
+    width: 250px;
+    height: 100vh;
+    z-index: 9;
+    top:0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.317);
+    backdrop-filter: blur(10px);
+    list-style: none;
+
+}
+.sidebar-container .item {
+    width: 100%;
+}
+.sidebar-container a{
+    width: 100%;
+    padding-left: 15px;
+}
+.item:hover{
+    background-color: #d5d1d1c3;
+}
+ @media(max-width:800px){
+    .hideonls{
+        display:none;
+    }
+ }
+ @media(min-width:801px){
+    .menu{
+        display: none;
+    }
+ }
+@media(max-width:400px){
+    .sidebar-container{
+        width: 100%;
+    }
+}
